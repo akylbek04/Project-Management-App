@@ -1,31 +1,8 @@
-import React, { forwardRef, useImperativeHandle, useRef } from "react";
-
-// const Input = forwardRef(function Input({ title, isInput, ...props }) => {
-//   let classes =
-//     "w-full p-1 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600 ";
-//   return (
-//     <p className="gap-1 my-4 flex flex-col">
-//       <label className="text-stone-500 text-sm font-bold uppercase">
-//         {title}
-//       </label>
-//       {isInput ? (
-//         <input className={classes} {...props} />
-//       ) : (
-//         <textarea className={classes} {...props} />
-//       )}
-//     </p>
-//   );
-// })
+import React, { forwardRef } from "react";
 
 const Input = forwardRef(function Input({ title, isInput, ...props }, ref) {
   let classes =
     "w-full p-1 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600 ";
-
-//   useImperativeHandle(ref, () => {
-//     return {
-//       get() {},
-//     };
-//   });
 
   return (
     <p className="gap-1 my-4 flex flex-col">
